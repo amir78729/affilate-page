@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .icons {
+            margin-top: 50px;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: white;
+            align-items: center;
+            padding: 0 40px;
+            justify-content: space-between;
+            position: relative;
+        }
+        .icons .line {
+            position: absolute;
+            left: 45px;
+            top: 14px;
+            height: 1px;
+            width: calc(100% - 90px);
+            background-color: #dddddd;
+
+        }
+
+        .image {
+            height: 26px;
+            background-color: white;
+            z-index: 10;
+            outline: solid white 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="icons">
+        <div class="line"></div>
+        <img src="images/agreement@3x.png" alt="agreement logo (step 1)" class="image ">
+        <img src="images/group-7@3x.png" alt="agreement logo (step 1)" class="image ">
+        <img src="images/group-4@3x.png" alt="agreement logo (step 1)" class="image ">
+        <img src="images/group-6@3x.png" alt="agreement logo (step 1)" class="image ">
+    </div>
+
+</body>
+</html>
