@@ -8,20 +8,24 @@
 }
 
 html, body {
+    direction: rtl;
+    height: 100%;
     margin: 0;
     font-family: dana, sans-serif;
 }
 * {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
 .icons {
     margin-top: 50px;
-    height: 30px;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
     background-color: white;
-    padding: 0 35px;
+    padding: 0 15px;
     justify-content: space-between;
     position: relative;
 }
@@ -40,7 +44,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     z-index: 10;
-    height: 70px;
 }
 
 .logo-container .logo {
@@ -49,9 +52,108 @@ html, body {
     outline: solid white 10px;
 }
 .logo-container h3 {
+    margin: 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    border-bottom: solid 4px transparent;
+    padding: 10px 5px;
+    transition: all 0.2s;
+}
+
+.activate {
+    color: #2266f4;
+    border-bottom: solid 4px #2266f4;
+    transition: all 0.2s;
+
+}
+.deactivate {
     color: #979797;
-    border-bottom: solid 3px #2266f4;
-    padding: 0 5px;
+    border-bottom: solid 4px #ffffff;
+    transition: all 0.2s;
+
+}
+
+.main-container {
+    background-color: #f7f7f7;
+    height: calc(100% - 110px);
+    width: 100%;
+    padding: 0 16px 20px;
+    position: relative;
+}
+
+.main-container > div {
+    text-align: justify;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.main-top .info {
+    color: #2266f4;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+select {
+    width: 100px;
+    height: 24px;
+    outline: none;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 16px;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card .card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.card .card-row:last-child {
+    margin-bottom: 0;
+}
+.card-row p {
+    margin: 0;
+}
+
+.card-row p:first-child {
+    color: #4d4d4d;
+}
+
+.blue {
+    color: #0065dc;
+}
+
+.red {
+    color: #d32f2f;
+}
+
+@media screen and (max-width: 330px){
+    .icons {
+        padding: 0 10px;
+    }
 }
