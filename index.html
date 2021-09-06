@@ -9,28 +9,86 @@
 <body>
     <div class="icons">
         <div class="line"></div>
-        <div class="logo-container">
-            <img src="images/agreement@3x.png" alt="agreement logo (step 1)" class="logo">
+        <div class="logo-container" onclick="changeContainer(0)" id="invited-container">
+            <img src="images/agreement@3x.png" alt="invited logo (step 1)" class="logo">
             <h3>دعوت شده</h3>
         </div>
 
-        <div class="logo-container">
-            <img src="images/group-7@3x.png" alt="signup logo (step 2)" class="logo">
+        <div class="logo-container" onclick="changeContainer(1)" id="pending-container">
+            <img src="images/group-7@3x.png" alt="pending logo (step 2)" class="logo">
             <h3>در حال ثبت‌نام</h3>
         </div>
 
-        <div class="logo-container">
-            <img src="images/group-4@3x.png" alt="accepted logo (step 3)" class="logo">
+        <div class="logo-container" onclick="changeContainer(2)" id="approved-container">
+            <img src="images/group-4@3x.png" alt="approved logo (step 3)" class="logo">
             <h3>تایید شده</h3>
         </div>
 
-        <div class="logo-container">
+        <div class="logo-container" onclick="changeContainer(3)" id="activated-container">
             <img src="images/group-6@3x.png" alt="activated logo (step 4)" class="logo">
             <h3>فعال شده</h3>
         </div>
     </div>
+    <div class="main-container">
+        <div id="invited-container-body">
+            <div class="main-top">
+                <select name="invited-container-select" id="invited-container-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <a href="" class="info">
+                    <p>راهنما</p>
+                    <img src="images/ic-info@3x.png" alt="information">
+                </a>
+            </div>
 
-    <script src=""></script>
+        </div>
+
+        <div id="pending-container-body">
+            <div class="main-top">
+                <select name="invited-container-select" id="pending-container-select">
+                    <option value="1">مرتب‌سازی بر اساس</option>
+                    <option value="2">2</option>
+                </select>
+                <a href="" class="info">
+                    <p>راهنما</p>
+                    <img src="images/ic-info@3x.png" alt="information">
+                </a>
+            </div>
+
+
+        </div>
+
+        <div id="approved-container-body">
+            <div class="main-top">
+                <select name="approved-container-select" id="approved-container-select">
+                    <option value="1">مرتب‌سازی بر اساس</option>
+                    <option value="2">2</option>
+                </select>
+                <a href="" class="info">
+                    <p>راهنما</p>
+                    <img src="images/ic-info@3x.png" alt="information">
+                </a>
+            </div>
+
+        </div>
+
+        <div id="activated-container-body">
+            <div class="main-top">
+                <select name="invited-container-select" id="activated-container-select">
+                    <option value="1">مرتب‌سازی بر اساس</option>
+                    <option value="2">2</option>
+                </select>
+                <a href="" class="info">
+                    <p>راهنما</p>
+                    <img src="images/ic-info@3x.png" alt="information">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts/navbar.js" defer></script>
 
 </body>
 </html>
